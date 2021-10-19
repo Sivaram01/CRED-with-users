@@ -1,0 +1,116 @@
+body{
+  background: #8A2387;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  min-height: 100vh;
+}
+
+.user-container{
+  background-color: #fff;
+  margin:2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  gap: 1rem;
+  transition: all .2s;
+}
+
+.user-avatar{
+  border-radius: 50%;
+  height: 8rem;
+  width: 8rem;
+  object-fit: cover;
+}
+.user-name{
+  font-size: 1.4rem;
+  font-family: 'Pacifico', cursive;
+}
+
+.user-container:hover{
+  transform: scale(1.1);
+}
+.user-container:hover .user-name{
+  color: crimson;
+}
+
+.user-form{
+ text-align: center;
+ margin: 10px 5px;
+}
+
+.add-user-name{
+  height: 25px;
+}
+.add-user-avatar{
+  height: 25px;
+}
+
+.add-user-btn{
+  background-color:rgb(25,135,84);
+  color: #fff;
+  width:6.5rem;
+  height: 2.7rem;
+  margin-left: 5px;
+  border-radius: 8%;
+}
+
+.btn-primary{
+  width:5rem;
+}
+
+.form-control{
+  padding: 1.2rem .75rem;
+  display: inline-block;
+  width:30%;
+  margin-top:2rem;
+}
+
+/* .Edit-btn{
+  background-color:rgb(78,131,253);
+  color: #fff;
+  width:6rem;
+  height: 2rem;
+  border-radius: 8%;
+  margin: 5px 6px;
+}
+
+
+.Delete-btn{
+  background-color:rgb(220,53,69);
+  color: #fff;
+  width:6rem;
+  height: 2rem;
+  border-radius: 8%;
+} */
+.save-btn{
+  background-color:green;
+  color: #fff;
+  width:6rem;
+  height: 2rem;
+  border-radius: 8%;
+}
+
+.Edit-name-input{
+  height: 25px;
+}
+.Edit-avatar-input{
+  height: 25px;
+}
+
+.edit-user-form{
+  display: none;
+  margin-top: 2rem;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+ .Edit-btn {
+  margin: 5px 2px;
+ }
+ .Edit-name-input{
+  height: 10px;
+}
+
+}
